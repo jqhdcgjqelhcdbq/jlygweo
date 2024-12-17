@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>1. Who painted the Mona Lisa?</h3>
+    <button onclick="checkAnswer(this, 'Incorrect')">Vincent van Gogh</button>
+    <button onclick="checkAnswer(this, 'Correct!')">Leonardo da Vinci</button>
+    <button onclick="checkAnswer(this, 'Incorrect')">Pablo Picasso</button>
+    <p id="feedback1"></p>
+
+    <h3>2. What is the tallest mountain in the world?</h3>
+    <button onclick="checkAnswer(this, 'Incorrect')">K2</button>
+    <button onclick="checkAnswer(this, 'Correct!')">Mount Everest</button>
+    <button onclick="checkAnswer(this, 'Incorrect')">Kangchenjunga</button>
+    <p id="feedback2"></p>
+
+    <h3>3. Free response: What is the capital of Japan?</h3>
+    <input type="text" id="free-response">
+    <button onclick="checkFreeResponse()">Submit</button>
+    <p id="feedback3"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
